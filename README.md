@@ -27,7 +27,13 @@ Run in terminal:
 In web browser go to:
 
     http://localhost:5000/
+    
+    
+# Testing
+Run in terminal:
 
+    pytest
+ 
 
 # Deployment
 - Deploy to Heroku by pushing to https://git.heroku.com/population-growth-ps.git  
