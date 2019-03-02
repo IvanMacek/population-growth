@@ -1,4 +1,4 @@
-# Flask
+# Web
 ### Install pipenv
 Install pipenv on OSX by running:
 

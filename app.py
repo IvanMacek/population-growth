@@ -10,10 +10,10 @@ app = Flask(__name__)
 search_engine = SearchEngine(zip_to_cbsa_url=os.environ['ZIP_TO_CBSA_URL'], cbsa_to_msa_url=os.environ['CBSA_TO_MSA_URL'])
 
 
-@app.route("/search-zip/<zip>")
-def search_by_zip(zip):
+@app.route("/search-zip/<zip_parameter>")
+def search_by_zip(zip_parameter):
     try:
-        zip_code = int(zip)
+        zip_code = int(zip_parameter)
     except ValueError:
         return jsonify(error='Invalid zip code'), 404
 
